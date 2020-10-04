@@ -1,0 +1,16 @@
+tbody {
+    height: 550px;
+    overflow-y: auto;
+}
+
+thead>tr, tbody {
+    display: block;
+}
+
+.margin-class{
+    margin: 7px;
+}
+
+img {
+    opacity: 0.3;
+  }
