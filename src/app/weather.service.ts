@@ -6,10 +6,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class WeatherService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getWeatherData(city){
-    var url='http://api.openweathermap.org/data/2.5/weather?q='+city+'&APPID=b685c7c1d6a5e236857b241e0c14d59b'
+  getWeatherData(city) {
+    var url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=b685c7c1d6a5e236857b241e0c14d59b'
 
     return this.http.get(url)
 

@@ -8,27 +8,27 @@ import { WeatherService } from './weather.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit  {
+export class AppComponent implements OnInit {
   title = 'covidApp';
-  city:any
-  weatherData:any
-  constructor(private weatherService:WeatherService) { }
+  city: any
+  weatherData: any
+  constructor(private weatherService: WeatherService) { }
 
-  
+
 
 
   ngOnInit() {
 
-  
+
   }
 
-  getWeatherData(){
+  getWeatherData() {
     this.weatherService.getWeatherData(this.city).subscribe(
-      res=>{
-        this.weatherData=res
+      res => {
+        this.weatherData = res
         console.log(this.weatherData)
       },
-      err=>{
+      err => {
         console.log(err)
       }
     )
