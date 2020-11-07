@@ -1,16 +1,19 @@
-tbody {
-    height: 550px;
-    overflow-y: auto;
-}
-
-thead>tr, tbody {
-    display: block;
-}
-
-.margin-class{
-    margin: 7px;
-}
-
-img {
-    opacity: 0.3;
+.custom_active{
+    padding-left: 42px;
+  padding-right: 42px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 37px;
+  border-radius: 5px;
+  border: none;
+  color: rebeccapurple;
+  background-color: white;
+  }
+  
+  .header{
+    background-color: rgb(212, 188, 81);
+  }
+  .quote{
+    background-color: rgb(212, 170, 92);
   }

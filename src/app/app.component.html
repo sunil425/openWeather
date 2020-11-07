@@ -1,128 +1,540 @@
-<div class="row margin-class">
-  <div class="col-3">
-    <button type="button" class="btn btn-outline-secondary">COVID-19 All India Tracker by Sarathlal</button>
-  </div>
-  <div class="col-3">
-    <h5><span class="badge badge-secondary">Choose a State</span></h5>
-    <select name="selectedState" id="state" class="form-control" [(ngModel)]="selectedStateCode"
-      (change)='onStateSelected()'>
-      <option *ngFor="let data of allData" [value]="data.statecode">{{data.state}}</option>
-    </select>
-  </div>
+<div class="container-fluid d-flex">
+
+	<div>
+		<div class=" header d-flex justify-content-around border">
+
+			<div class="d-flex align-items-center">
+				<button class="mb-2 custom_active">Active</button>
+				<h1>7252215</h1> <small>Updated 2 hours ago</small>
+			</div>
+
+			<div class="d-flex align-items-center">
+				<img src="../assets/icons-9.svg" width="65px" alt=""><span>Quote not seen</span>
+			</div>
+
+			<div class="my-auto mt-3">
+				<h6>Follow Up:Required</h6>
+			</div>
+		</div>
+
+
+
+
+		<div class="d-flex ">
+			<div class="col-2 card">
+				<h5 class="card-title text-center">TRAVELER REQUIREMENT</h5>
+			</div>
+			<div class="quote col-2 card">
+
+				<h5 class="card-title text-center text-light my-auto font-weight-bold font-italic">QUOTE</h5>
+
+			</div>
+			<div class=" col-2 card">
+				<h5 class="card-title text-center my-auto">VOUCHERS & PAYMENT</h5>
+
+			</div>
+		</div>
+
+
+		<div class="card">
+
+
+			<div class="card-body">
+
+
+
+
+				<div class="d-flex justify-content-between">
+					<div class="d-flex">
+
+						<div  class="card  p-1 pr-4">
+							<h5 class="card-title">24000/ <small>person </small> </h5>
+							<span class="">Updated</span>
+							<a href="#" class="card-link">Go somewhere</a>
+						</div>
+
+						<div  class="card  ml-2 p-1 pr-4">
+							<h5 class="card-title">24000/ <small>person </small> </h5>
+							<span class="">Updated</span>
+							<a href="#" class="card-link">Go somewhere</a>
+						</div>
+
+						<div  class="card ml-2  p-1 pr-4">
+							<h5 class="card-title">24000/ <small>person </small> </h5>
+							<span class="">Updated</span>
+							<a href="#" class="card-link">Go somewhere</a>
+						</div>
+
+						<div  class="card ml-2 p-1 pr-4">
+							<h5 class="card-title">24000/ <small>person </small> </h5>
+							<span class="">Updated</span>
+							<a href="#" class="card-link">Go somewhere</a>
+						</div>
+
+						<div  class="card  ml-2 p-1 pr-4">
+							<h5 class="card-title">24000/ <small>person </small> </h5>
+							<span class="">Updated</span>
+							<a href="#" class="card-link">Go somewhere</a>
+						</div>
+
+					</div>
+
+
+
+
+					<div class="align-self-end">
+					
+
+						<button type="button" class="btn btn-light"><img src="../assets/8.svg" width="30px" alt="">Compare Quote</button>
+
+
+
+					</div>
+				</div>
+
+				<div class="d-flex justify-content-between align-items-center ml-3">
+					<div class="d-flex">
+						<div class="p-3 text-center">
+							<img src="../assets/9.svg" alt="">
+							<div>
+								<span>Create</span> <br>
+								<span>Invoice</span>
+							</div>
+
+						</div>
+
+						<div class="p-3 text-center">
+							<img src="../assets/10.svg" alt="">
+						
+
+							<div>
+								<span>Download</span> <br>
+								<span>Invoice</span>
+							</div>
+						</div>
+
+						<div class="p-3 text-center">
+							<img src="../assets/11.svg" alt="">
+							<div>
+								<span>Edit</span> <br>
+								<span>Quote</span>
+							</div>
+						</div>
+
+						<div class="p-3 text-center">
+							<img src="../assets/13.svg" alt="">
+							<div>
+								<span>Delete</span> <br>
+								<span>Quote</span>
+							</div>					</div>
+					</div>
+
+					<div class="p-3 row ">
+						<div>Compare Versions:</div>
+						<div><select style="width:150px" name="" id="">
+								<option value=""></option>
+								<option value="">dnjvdk</option>
+								<option value="">dnjvdk</option>
+								<option value="">dnjvdk</option>
+
+							</select>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div>
+					<h2 class="text-secondary">Basic Details:</h2>
+
+					<div class="row">
+						<div class="col-4">
+							<span class="text-secondary">Destination:</span> <br>
+							<span>Bali</span>
+
+						</div>
+
+						<div class="col-4">
+							<span class="text-secondary">Days:</span> <br>
+							<span>5 nights</span>
+
+
+						</div>
+
+						<div class="col-4">
+							<h1>75%</h1>
+							<span class="mb-2">Probability</span>
+
+
+
+						</div>
+
+
+					</div>
+
+					<div class="row">
+						<div class="col-4">
+							<span class="text-secondary">Quotation price:</span> <br>
+							<span>27,000</span>
+
+						</div>
+
+						<div class="col-4">
+							<span class="text-secondary">Number of Travelers:</span> <br>
+							<span>2 Adults, 1 Child & 1 Infant</span>
+
+
+						</div>
+
+
+
+					</div>
+
+					<div class="row mt-2 ">
+						<div class="col-8">
+							<h6 class="text-secondary">Hotel Details :</h6>
+							<p>Night 1,2, Swiss-belhotel tuban, Kuta, Deluxe ,03 Nights : Deluxe Room With Pool
+								View + Breakfast</p>
+						</div>
+					</div>
+
+						<div>
+							<div class="text-secondary">Flight Details :</div>
+							<div>As On June 25th, 2019</div>
+							<div>Singapore Airlines</div>
+							<div class="mt-3">15 Mar 20SQ531V Class</div>
+							<div>Dept:AMD@2305 hrs</div>
+							<div>Arr:SIN@0715 hrs</div>
+							<div>16 Mar 20SQ938V Class</div>
+							<div>Dept:SIN@0820 hrs</div>
+							<div>Arr:DPS@1105 hrs</div>
+							<div>*********************</div>
+							<div>21 Mar 20SQ939V Class</div>
+							<div>Dept:DPS@1205 hrs</div>
+							<div>Arr:SIN@1445 hrs</div>
+							<div>21 Mar 20SQ530V Class</div>
+							<div>Dept:SIN@1840 hrs</div>
+							<div>Arr:AMD@2150 hrs</div>
+							<div>***************************</div>
+
+						</div>
+
+
+					<div class="row">
+						<div class="col-6">
+							<div>(VALID NOW // DYNAMIC FARE)</div>
+							<p>
+								**FINAL PRICE WILL BE COMMUNICATED AT THE TIME OF BOOKING
+							</p>
+
+						</div>
+					</div>
+
+					<div class="mt-3">
+						<h6 class="text-secondary">Cab Details :</h6>
+						<span>All Transfers Included.</span>
+					</div>
+
+						<div class="row mt-4">
+							<div class="col">
+								<div class="text-secondary">Inclusions:</div>
+								
+								<div>Hotels : Hotels/ Villas and Room categories</div>
+								<div>Meal plan : Breakfast</div>
+								<div>Airport Transfer : Arrival</div>
+								<div>Airport Transfer : Departure</div>
+								<div>Airfare</div>
+								<div>Tours and Sight Seeing : Local tours and </div>
+								<div>experiences (As mentioned in the itinerary)</div>
+								<div>Others : Other Inclusions (( (Honeymoon </div>
+								<div>inclusions in VILLA:</div>
+								<div>1. Welcome drink</div>
+								<div>2. Daily Breakfast</div>
+								<div>3. 1 X Couple candle light dinner</div>
+								<div>4. 1 X Couple Spa (60 Mins)</div>
+								<div>5. Honeymoon decoration</div>
+								<div>6. Complimentory 2 Bottles Mineral Water daily</div>
+
+							</div>
+							<div class="col">
+								<div class="text-secondary">Exclusions :</div>
+								<div>Meal plan : Lunch</div>
+								<div>Meal plan : Dinner</div>
+								<div>Visa (On Arrival ( Free of Cost ))</div>
+								<div>Travel insurance</div>
+								<div>Others : Other Exclusions (((**Travel </div>
+								<div>Triangle convenience fee of Rs. 500/-**)</div>
+								<div></div>
+	
+	
+							</div>
+
+						</div>
+
+						<div class="mt-3">
+						  <h5 class="text-warning ">ITINERARY</h5>
+						  <div class="text-secondary">Day 1 : Arrival at Bali [Pvt.]</div>
+						  <p>Welcome to Bali! Post-immigration and custom procedures, you will be greeted by our local 
+							representative who will assist you with transfer to your hotel in Kuta.</p>
+						  <div class="text-secondary mt-3">Day 2 : Full Day Kintamani Volcano - Ubud - Waterfall (No Meal) [Pvt.] (10 hours)</div>
+							<p>After Breakfast, leave for KINTAMANI VOLCANO – UBUD WATERFALL TOUR.
+								The Tour price includes: Air Conditioner car/van, private transfer and Tour Driver Guide, all 
+								Entrance fees and free using sarong in the temple.</p>
+
+								<div>DEPARTURE 08.00 AM (10 HOURS)</div>
+								<p>1. Ubud’s art villages- Ubud’s art villages like Celuk as the center of Gold and Silver smith, Batuan 
+									as the place of traditional painting and . Mas is also part of Ubud where you will see the activity 
+									of the master of wood carvers.</p>
+
+									<p>2. Tegenungan Waterfall- Tegenungan Waterfall located at sacred river of Petanu River, 
+										Tegenungan Village south part of Kemenuh Village. There are many steps go down to the river 
+										if you would like to see te watefall closer. Waterfalls are sharp drops along the course of a river</p>
+
+										<p>3. Seribatu spice garden- explore the spice garden in Seribatu where you can enjoy coffee and 
+											spice plantation .</p>
+
+											<div>4. Batur volcano & crater lake.</div>
+											<div>5. Rice terrace-visit rice terrace in Tegallalang</div>
+											<div>• Extra hours are chargeable @ usd 5 per hour Overnight stay at the hotel</div>
+
+						</div>
+
+						<div class="mt-3">
+							<div class="text-secondary">Day 3 : Nusa Penida Tour with Snorkeling at the Coast [Pvt]</div>
+                         <p>• Our driver will pick you up from hotel and drive you to meeting point in Sanur to get fast boat
+							to Nusa Penida. The fast boat departure at 08.15 from Sanur harbor and heading to Nusa Penida 
+							around 30 - 45 minutes ride. Upon arrival at Nusa Penida harbor, we will drive you to Kelingking 
+							Beach it is a beautiful views of the cliffs and charming beaches from the cliff top. Then we will 
+							take you to Angel's Billabong it is natural infinity pool. After that, we will take you to Broken 
+							Beach (Pasih Uug) is an arched tunnel in the cliffs, allowing the ocean to flow into a pool. A 
+							comfortable place to take picture and sometimes you can see Manta ray fish swimming over 
+							the sea. Our team member will take you to a restaurant and serve a lunch, then relax for a 
+							moment. After the tour is completed, we will take you back to the boat and transfer back to
+							Bali again. You will arrive back to your hotel around 07.00 pm </p>
+
+							<div class="mt-3">• Inclusions:</div>
+							<div>• • Return hotel transfer (pick up and drop off) from Sanur, Kuta, Jimbaran, Nusa Dua.</div>
+							<div>• • Return ticket fast boat Sanur - Nusa Penida.</div>
+							<div>• • Welcome drink.</div>
+							<div>• • Island tour at Kelingking Beach, Broken Beach, Angels Billabong and Crystal Bay.</div>
+							<div>• • Lunch.</div>
+							<div>• • Insurance coverage.</div>
+
+
+						</div>
+
+						<div class="mt-4">
+							<div class="text-secondary">Day 4 : Padang Padang Beach Followed By Sunset Uluwatu Tour with Kedak Dance [Pvt.] (5 hours)+Transfers </div>
+
+							<p>After a hearty breakfast, spend the day at “Padang Padang Beach Followed By Sunset Uluwatu 
+								Tour with Kedak Dance” around 1-2 pm
+								The Tour price includes: Air Conditioner car/van, private transfer and Tour Driver Guide, all 
+								Entrance fees and free using sarong in the temple.</p>
+
+								<p class="mt-2">Uluwatu Clift, where one of the most important Hindus temple were built on the top of clift.
+									The hair-raising sounds and rhythms of the kecak form the most lasting, haunting memory for
+									many visitors to Bali.</p>
+
+									<p>Men and boys sitting in concentric circles slide into trance as they chant and sing in lively 
+										counterpoint, the only music to accompany a dance re-enactment from the Hindu epic 
+										Ramayana. Eerie shadows cast by the light of torches and the totality the sound of this chorus
+										of human voices – make for an evening not soon to be forgotten. Just the time of sunset,
+										Kecak Dance is performed in the stage near the temple, with back drop of sun set behind of
+										the ocean horizon. Enjoy the magnificent view of wide ocean in the south part of Bali from the
+										high clift of Uluwatu.</p>
+
+										<p>Overnight stay at Villa.</p>
+						</div>
+
+						<div>
+							<div class="text-secondary mt-2">Day 5 : Day at Leisure + Candle Light dinner at VILLA + Spa [At villa]</div>
+
+							<p>After a hearty breakfast, spend the day by relaxing.</p>
+							<p>In evening enjoy:</p>
+							<div>1. Candle light dinner at Villa.</div>
+							<div>2. 1 hr per person spa at Villa.</div>
+							<p>Overnight stay at Villa.</p>
+							
+							<div class="text-secondary mt-2">Day 6 : Departure</div>
+							<p>After a hearty breakfast, check out from Villa and get transferred to airport with sweet
+								memories from journey.</p>
+
+						</div>
+
+						<div>
+							<h4>TERMS & CONDITIONS</h4>
+							<button type="button" class="btn btn-light">SHOW LESS</button>
+
+						</div>
+
+
+
+					
+						
+
+
+
+
+				</div>
+
+
+
+
+			</div>
+
+
+		</div>
+
+		<div class="card p-3">
+
+			<h6>Comments:</h6>
+			<div class="d-flex">
+				<div style="width: 95%;" class="card p-3">
+				<p>Please write something</p>
+				</div>
+				<div class="align-self-end ml-3"><button class="btn btn-danger">POST</button></div>
+
+			</div>
+
+			<div>
+				<div class="d-flex">
+					<div style="border-radius:50%;height: 50px;width:  50px; background-color: brown;border: brown solid 2px;"></div>
+					<div>
+						<span>TRAVEL TOGGLE</span> <br>
+						<small>Sent on 24 Aug 20 at 12:04</small>
+						<p>Yes I will send you the quote for Bali and Singapore.</p>
+					</div>
+				</div>
+
+				<div class="d-flex">
+					<div style="border-radius:50%;height: 50px;width:  50px; background-color: brown;border: brown solid 2px;"></div>
+					<div>
+						<span>TRAVEL TOGGLE</span> <br>
+						<small>Sent on 24 Aug 20 at 12:04</small>
+						<p>Yes I will send you the quote for Bali and Singapore.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div class="">
+
+		<div class="card bg-warning mb-3 " style="width: 16rem;">
+			<div class="d-flex justify-content-between pl-2 pr-2">
+
+				<div>Traveller Detail </div>
+				<div><img width="20px" src="../assets/22.svg" alt=""></div>
+			</div>
+			<hr>
+			<div class="p-3">
+				<p> <img width="20px" src="../assets/21.svg" alt=""> Dr. Krishna</p>
+				<p><img width="20px" src="../assets/21.svg" alt=""> +91 99008 81122</p>
+				<p> <img width="20px" src="../assets/14.svg" alt=""> NA</p>
+	
+			</div>
+		
+
+		</div>
+
+		<div class="card bg-warning" style="width: 16rem;">
+			<div class="d-flex justify-content-between p-2">
+
+				<div>Notes </div>
+				<div><img width="20px" src="../assets/15.svg" alt=""></div>
+			</div>
+			<hr>
+
+			<div class="p-3">
+				<div class="card  " style="width: 14rem;">
+					<div>
+						&#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711;
+						&#9711; &#9711; &#9711; &#9711;
+					</div>
+					<hr>
+
+					<div class="p-2">
+						<small class="mb-2">26 August 2020</small>
+										<p>Call the Traveler at 6pm.</p>	
+					</div>
+
+				
+					<div class="text-right p-2">
+						<img src="../assets/11.svg" alt=""> &nbsp; <img src="../assets/13.svg" alt="">
+					</div>
+
+
+
+				</div>
+
+				<div class="card mt-2" style="width: 14rem;">
+					<div>
+						&#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711;
+						&#9711; &#9711; &#9711; &#9711;
+					</div>
+					<hr>
+
+					<div class="p-2">
+						<small class="mb-2">26 August 2020</small>
+										<p>Call the Traveler at 6pm.</p>	
+					</div>
+
+				
+					<div class="text-right p-2">
+						<img src="../assets/11.svg" alt=""> &nbsp; <img src="../assets/13.svg" alt="">
+					</div>
+
+
+
+				</div>
+
+				<div class="card mt-2 " style="width: 14rem;">
+					<div>
+						&#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711; &#9711;
+						&#9711; &#9711; &#9711; &#9711;
+					</div>
+					<hr>
+
+					<div class="p-2">
+						<small class="mb-2">26 August 2020</small>
+										<p>Call the Traveler at 6pm.</p>	
+					</div>
+
+				
+					<div class="text-right p-2">
+						<img src="../assets/11.svg" alt=""> &nbsp; <img src="../assets/13.svg" alt="">
+					</div>
+
+
+
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
 </div>
 
-<div class="row margin-class">
-  <div class="col-3">
-    <h5><span class="badge badge-secondary">All India Summary</span></h5>
-    <table class="table table-striped">
-      <tbody>
-        <tr>
-          <td>Total Confirmed</td>
-          <td>{{totalData?.confirmed | number}}</td>
-        </tr>
-        <tr>
-          <td>Total Active</td>
-          <td>{{totalData?.active | number}}</td>
-        </tr>
-        <tr>
-          <td>Total Recovered</td>
-          <td>{{totalData?.recovered | number}}</td>
-        </tr>
-        <tr>
-          <td>Total Deaths</td>
-          <td>{{totalData?.deaths | number}}</td>
-        </tr>
-        <tr>
-          <td>Newly Confirmed</td>
-          <td>{{totalData?.deltaconfirmed | number}}</td>
-        </tr>
-        <tr>
-          <td>Newly Recovered</td>
-          <td>{{totalData?.deltarecovered | number}}</td>
-        </tr>
-        <tr>
-          <td>Newly Deaths</td>
-          <td>{{totalData?.deltadeaths | number}}</td>
-        </tr>
-        <tr>
-          <td>Migrated to Other</td>
-          <td>{{totalData?.migratedother | number}}</td>
-        </tr>
-        <tr>
-          <td>Last Updated Time</td>
-          <td>{{totalData?.lastupdatedtime}}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
 
-  <div *ngIf="selectedStateCode==undefined">
-    <img src="../assets/thediplomat-2020-04-01.png" style="width: 350px;" />
-  </div>
-  <div class="col-3" *ngIf="selectedStateCode!=undefined">
-    <h5><span class="badge badge-secondary">{{stateData?.state}} Summary</span></h5>
-    <table class="table table-striped">
-      <tbody>
-        <tr>
-          <td>Total Confirmed</td>
-          <td>{{stateData?.confirmed | number}}</td>
-        </tr>
-        <tr>
-          <td>Total Active</td>
-          <td>{{stateData?.active | number}}</td>
-        </tr>
-        <tr>
-          <td>Total Recovered</td>
-          <td>{{stateData?.recovered | number}}</td>
-        </tr>
-        <tr>
-          <td>Total Deaths</td>
-          <td>{{stateData?.deaths | number}}</td>
-        </tr>
-        <tr>
-          <td>Newly Confirmed</td>
-          <td>{{stateData?.deltaconfirmed | number}}</td>
-        </tr>
-        <tr>
-          <td>Newly Recovered</td>
-          <td>{{stateData?.deltarecovered | number}}</td>
-        </tr>
-        <tr>
-          <td>Newly Deaths</td>
-          <td>{{stateData?.deltadeaths | number}}</td>
-        </tr>
-        <tr>
-          <td>Migrated to Other</td>
-          <td>{{stateData?.migratedother | number}}</td>
-        </tr>
-        <tr>
-          <td>Last Updated Time</td>
-          <td>{{stateData?.lastupdatedtime}}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
 
-  <div class="col-3" *ngIf="selectedStateCode!=undefined">
-    <h5><span class="badge badge-secondary">{{stateData?.state}} District wise Details</span></h5>
-    <div>
-      <table class="table table-sm">
-        <thead>
-          <tr>
-            <th scope="col">District Name</th>
-            <th scope="col">Total Confirmed</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let data of districtData?.districtData">
-            <td>{{data.name}}</td>
-            <td>{{data.confirmed | number}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div style="text-align: center; margin-bottom: 50px;">
+	<h1>Weaather</h1>
+	<input type="text" name="city" [(ngModel)]="city">
+	<button (click)="getWeatherData()">Get Weather Data</button>
 
-  </div>
+	<p>Name:{{weatherData.name}}</p>
+	<p>Temp:{{weatherData.main.temp}}</p>
+	<p>Max Temp:{{weatherData.main.temp_max}}</p>
+	<p>Min Temp:{{weatherData.main.temp_min}}</p>
+	<p>Humidity:{{weatherData.main.humidity}}%</p>
+	<p>Description:{{weatherData.weather[0].description}}</p>
+
+	<p>Wind speed:{{weatherData.wind.speed}}</p>
+
+
+
 </div>
 
-<div id="chartContainer" style="height: 370px; width: 100%;"></div>
